@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+  --Font-size: 16px;
+
+  --font-family: "Red Hat Display", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--Pale-blue) url("/images/pattern-background-desktop.svg")
+    no-repeat;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+main {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 33%;
+  border-radius: 20px;
+}
+
+header img {
+  border-radius: 20px 20px 0 0;
+}
+
+.container h2 {
+    color: var(--Dark-blue);
+    font-weight: 900;
+    margin: 30px 0 20px 0;
+}
+
+.container p {
+    color: var(--Desaturated-blue);
+    margin: 20px 0;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    background: var(--Very-pale-blue);
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Annual-plan {
+    display: flex;
+    gap: 20px;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.price p {
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.plan {
+    color: var(--Dark-blue);
+    font-weight: 1000;
+}
+
+.change {
+    font-weight: 900;
+    font-size: 0.9rem;
+    color: var(--Bright-blue);
+}
+
+.change:active {
+    cursor: pointer;
+    text-decoration: none;
+    opacity: .7;
+}
+
+.btn button {
+    width: 86%;
+    background: var(--Bright-blue);
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px grey;
+}
+
+.btn button:active {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.order {
+    color: var(--Desaturated-blue);
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.order:active {
+    cursor: pointer;
+    opacity: .7;
+}
+
+@media (max-width: 600px) {
+    body {
+        background: var(--Pale-blue);
+    }
+    main {
+        max-width: 75%;
+    }
+}
